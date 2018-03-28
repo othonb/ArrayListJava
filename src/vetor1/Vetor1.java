@@ -65,6 +65,11 @@ public class Vetor1 {
         
         listaAlunos.add(alunoInsercao);
         
+        listaAlunos.add (new Aluno());
+        listaAlunos.get(listaAlunos.size() - 1).setNome("Tiradentes");
+        listaAlunos.get(listaAlunos.size() - 1).setMatricula ("123456");
+        listaAlunos.get(listaAlunos.size() - 1).setMediaGlobal(8.5);
+        
         for (int i = 0; i < listaAlunos.size();++ i) {
             
             System.out.println (listaAlunos.get(i).getNome());
